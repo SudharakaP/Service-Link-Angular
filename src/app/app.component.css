@@ -14,6 +14,11 @@ html {
 
 /* Sections
    ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0; }
 
 /**
  * Correct the font size and margin on `h1` elements within `section` and
@@ -1386,3 +1391,7 @@ select {
         border-bottom: 1px solid #6C63FF;
         transform: none;
         transition: none; } }
+
+.nav__mobile {
+  display: none;
+}
