@@ -749,8 +749,11 @@ select {
   color: #fff;
   transition: 0.7s; }
 
+.logo_image {
+  vertical-align: middle;
+}
+
 .navbar__logo {
-  font-size: 1.325rem;
   transition: 0;
   color: #fff;
   text-decoration: none; }
