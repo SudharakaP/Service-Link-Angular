@@ -8,6 +8,8 @@ import { JumbotronComponent } from './jumbotron/jumbotron.component';
 import { CustomersComponent } from './customers/customers.component';
 import { ServicesComponent } from './services/services.component';
 import { ContactComponent } from './contact/contact.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
+
 
 @NgModule({
   declarations: [
@@ -16,11 +18,13 @@ import { ContactComponent } from './contact/contact.component';
     JumbotronComponent,
     CustomersComponent,
     ServicesComponent,
-    ContactComponent
+    ContactComponent,
+    PortfolioComponent
   ],
+
   imports: [
     BrowserModule,
-    FontAwesomeModule
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
