@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import {NgxPageScrollModule} from 'ngx-page-scroll';
+import {NgsRevealModule} from 'ng-scrollreveal';
 
 import { AppComponent } from './app.component';
 import { MainHeaderComponent } from './main-header/main-header.component';
@@ -26,7 +27,8 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
   imports: [
     BrowserModule,
     FontAwesomeModule,
-    NgxPageScrollModule
+    NgxPageScrollModule,
+    NgsRevealModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

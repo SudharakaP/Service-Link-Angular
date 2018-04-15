@@ -8,11 +8,11 @@
     </div>
   </div>
   <div class="container">
-    <div class="row">
+    <div class="row" [ngsRevealSet]="{reset:true}" [ngsInterval]="200" [ngsSelector]="'.faIconServices'">
       <div class="col-lg-4 col-md-6 text-center">
         <div class="service-box mt-5 mx-auto">
           <div style="text-align:center" class="mb-3 sr-icons text-primary">
-            <fa-icon [icon]="faUniversalAccess" size="4x"></fa-icon>
+            <fa-icon class="faIconServices" [icon]="faUniversalAccess" size="4x"></fa-icon>
           </div>
           <h3 class="mb-3">Mobile</h3>
           <p class="text-muted mb-0">Service-Link extends data communications to field workers by supporting the leading private and public wireless
@@ -23,7 +23,7 @@
       <div class="col-lg-4 col-md-6 text-center">
         <div class="service-box mt-5 mx-auto">
           <div style="text-align:center" class="mb-3 sr-icons text-primary">
-            <fa-icon [icon]="faPaperPlane" size="4x"></fa-icon>
+            <fa-icon class="faIconServices" [icon]="faPaperPlane" size="4x"></fa-icon>
           </div>
           <h3 class="mb-3">Workforce</h3>
           <p class="text-muted mb-0">Most mobile workforce management systems typically take six months or more to implement. With our off-the-shelf
@@ -34,7 +34,7 @@
       <div class="col-lg-4 col-md-6 text-center">
         <div class="service-box mt-5 mx-auto">
           <div style="text-align:center" class="mb-3 sr-icons text-primary">
-            <fa-icon [icon]="faPeopleCarry" size="4x"></fa-icon>
+            <fa-icon class="faIconServices" [icon]="faPeopleCarry" size="4x"></fa-icon>
           </div>
           <h3 class="mb-3">Management</h3>
           <p class="text-muted mb-0">Service-Link uses the internet and wireless communications to provide a leading edge workforce management solution

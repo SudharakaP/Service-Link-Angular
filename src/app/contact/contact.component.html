@@ -8,16 +8,16 @@
           you as soon as possible!</p>
       </div>
     </div>
-    <div class="row">
+    <div class="row" [ngsRevealSet]="{reset:true}" [ngsInterval]="200" [ngsSelector]="'.faIconContacts'">
       <div class="col-lg-4 ml-auto text-center">
         <div style="text-align:center" class="mb-3 sr-contact">
-          <fa-icon [icon]="faPhone" size="3x"></fa-icon>
+          <fa-icon class="faIconContacts" [icon]="faPhone" size="3x"></fa-icon>
         </div>
         <p>(604) 982-0600</p>
       </div>
       <div class="col-lg-4 mr-auto text-center">
         <div style="text-align:center" class="mb-3 sr-contact">
-          <fa-icon [icon]="faEnvelope" size="3x"></fa-icon>
+          <fa-icon class="faIconContacts" [icon]="faEnvelope" size="3x"></fa-icon>
         </div>
         <p>
           <a href="mailto:info@service-link.us">info@service-link.us</a>
