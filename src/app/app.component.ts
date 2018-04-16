@@ -1,4 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
+
+@NgModule({
+  declarations: [AppComponent],
+  bootstrap: [AppComponent]
+})
 
 @Component({
   selector: 'app-root',
