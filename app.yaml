@@ -1,7 +1,5 @@
-# [START runtime]
-runtime: python27
-threadsafe: yes
-# [END runtime]
+runtime: nodejs
+env: flex
 
 handlers:
 
@@ -20,7 +18,8 @@ skip_files:
 - ^README\..*
 - \.gitignore
 - ^\.git$
-- ^grunt\.js
+- ^package-lock\.json
+- tsconfig.\json
 - ^src$
 - ^e2e$
 - \.editorconfig
@@ -28,3 +27,4 @@ skip_files:
 - ^package\.json
 - ^protractor\.conf\.js
 - ^tslint\.json
+- \.angular-cli\.json
