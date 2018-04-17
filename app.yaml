@@ -28,3 +28,4 @@ skip_files:
 - ^protractor\.conf\.js
 - ^tslint\.json
 - \.angular-cli\.json
+- ^\.vscode
