@@ -18,7 +18,6 @@ skip_files:
 - ^README\..*
 - \.gitignore
 - ^\.git$
-- ^package-lock\.json
 - tsconfig.\json
 - ^src$
 - ^e2e$
