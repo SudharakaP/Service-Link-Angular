@@ -16,9 +16,8 @@ export class MainHeaderComponent implements OnInit {
   addShrinkClass () { 
     if (window.pageYOffset > 100)
       this.pageScrolled = true;
-    else{ 
-      this.pageScrolled = false
-    }
+    else
+      this.pageScrolled = false;
   }
 }
 
