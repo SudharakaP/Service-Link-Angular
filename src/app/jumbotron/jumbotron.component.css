@@ -45,3 +45,8 @@ header.masthead p {
     font-size: 4rem;
   }
 }
+
+.text-faded {
+  color: rgba(255, 255, 255, 0.9);
+  background-color:rgba(0, 0, 0, 0.8);
+}
