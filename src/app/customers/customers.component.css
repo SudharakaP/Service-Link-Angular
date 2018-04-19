@@ -1,3 +1,7 @@
 .bg-customers {
   background-color: #fff;
 }
+
+.logo-image {
+  height: 150%; width: auto;
+}
