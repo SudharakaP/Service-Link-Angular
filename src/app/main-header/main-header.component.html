@@ -8,18 +8,18 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav ml-auto">
+      <ul class="navbar-nav ml-auto" [ngClass]='{navLinkBackground: !pageScrolled}'>
         <li class="nav-item">
-          <a class="nav-link" [ngClass]='{navLinkBackground: !pageScrolled}' pageScroll href="#services">Services</a>
+          <a class="nav-link" pageScroll href="#services">Services</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" [ngClass]='{navLinkBackground: !pageScrolled}' pageScroll href="#portfolio">Portfolio</a>
+          <a class="nav-link" pageScroll href="#portfolio">Portfolio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" [ngClass]='{navLinkBackground: !pageScrolled}' pageScroll href="#customers">Customers</a>
+          <a class="nav-link" pageScroll href="#customers">Customers</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" [ngClass]='{navLinkBackground: !pageScrolled}' pageScroll href="#contact">Contact</a>
+          <a class="nav-link" pageScroll href="#contact">Contact</a>
         </li>
       </ul>
     </div>
