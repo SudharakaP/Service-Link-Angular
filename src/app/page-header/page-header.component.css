@@ -1,0 +1,16 @@
+#mainNav {
+    border-bottom: 1px solid rgba(33, 37, 41, 0.1);
+    background-color: #fff;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 700;
+  }
+
+  .navbar-brand {
+      color: #F05F40;
+  }
+
+  .nav-link {
+    padding: 0.5rem 1rem;
+    font-size: .9rem;
+    text-transform: uppercase;
+  }

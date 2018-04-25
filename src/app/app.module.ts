@@ -14,6 +14,7 @@ import { ContactComponent } from './contact/contact.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { MoreInformationComponent } from './more-information/more-information.component';
 import { HomePageComponent } from './home-page/home-page.component';
+import { PageHeaderComponent } from './page-header/page-header.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomePageComponent },
@@ -30,7 +31,8 @@ const appRoutes: Routes = [
     ContactComponent,
     PortfolioComponent,
     MoreInformationComponent,
-    HomePageComponent
+    HomePageComponent,
+    PageHeaderComponent
   ],
 
   imports: [
