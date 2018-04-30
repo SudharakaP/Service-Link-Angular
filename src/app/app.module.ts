@@ -15,6 +15,8 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { MoreInformationComponent } from './more-information/more-information.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { PageHeaderComponent } from './page-header/page-header.component';
+import { MoreInfoJumbotronComponent } from './more-info-jumbotron/more-info-jumbotron.component';
+import { MoreInfoContentComponent } from './more-info-content/more-info-content.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomePageComponent },
@@ -32,7 +34,9 @@ const appRoutes: Routes = [
     PortfolioComponent,
     MoreInformationComponent,
     HomePageComponent,
-    PageHeaderComponent
+    PageHeaderComponent,
+    MoreInfoJumbotronComponent,
+    MoreInfoContentComponent
   ],
 
   imports: [
