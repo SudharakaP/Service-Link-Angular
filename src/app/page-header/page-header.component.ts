@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit , HostListener} from '@angular/core';
 
 @Component({
   selector: 'app-page-header',
@@ -9,5 +9,13 @@ export class PageHeaderComponent implements OnInit {
   pageScrolled: boolean;
   constructor() { }
   ngOnInit() {
+  }
+
+  @HostListener("window:scroll", []) 
+  addShrinkClass () { 
+    if (window.pageYOffset > 100)
+      this.pageScrolled = true;
+    else
+      this.pageScrolled = false;
   }
 }
