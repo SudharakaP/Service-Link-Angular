@@ -10,3 +10,7 @@ ol {
 section {
   padding: 4rem 0;
 }
+
+.list-group > li {
+    padding: 0.5em;
+}
