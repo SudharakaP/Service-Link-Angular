@@ -4,6 +4,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import {NgxPageScrollModule} from 'ngx-page-scroll';
 import {NgsRevealModule} from 'ng-scrollreveal';
 import { RouterModule, Routes } from '@angular/router';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
 import { MainHeaderComponent } from './main-header/main-header.component';
@@ -44,6 +45,7 @@ const appRoutes: Routes = [
     FontAwesomeModule,
     NgxPageScrollModule,
     NgsRevealModule.forRoot(),
+    NgbModule.forRoot(),
     RouterModule.forRoot(
       appRoutes,
       { enableTracing: true } // <-- debugging purposes only

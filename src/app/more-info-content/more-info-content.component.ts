@@ -6,10 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./more-info-content.component.css']
 })
 export class MoreInfoContentComponent implements OnInit {
-
   constructor() { }
 
   ngOnInit() {
   }
-
 }
