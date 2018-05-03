@@ -18,10 +18,14 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { PageHeaderComponent } from './page-header/page-header.component';
 import { MoreInfoJumbotronComponent } from './more-info-jumbotron/more-info-jumbotron.component';
 import { MoreInfoContentComponent } from './more-info-content/more-info-content.component';
+import { DeploymentContentComponent } from './deployment-content/deployment-content.component';
+import { DeploymentJumbotronComponent } from './deployment-jumbotron/deployment-jumbotron.component';
+import { DeploymentComponent } from './deployment/deployment.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomePageComponent },
-  { path: 'aboutUs', component: MoreInformationComponent }
+  { path: 'aboutUs', component: MoreInformationComponent },
+  { path: 'deployment', component: DeploymentComponent }
 ];
 
 @NgModule({
@@ -37,7 +41,10 @@ const appRoutes: Routes = [
     HomePageComponent,
     PageHeaderComponent,
     MoreInfoJumbotronComponent,
-    MoreInfoContentComponent
+    MoreInfoContentComponent,
+    DeploymentJumbotronComponent,
+    DeploymentComponent,
+    DeploymentContentComponent
   ],
 
   imports: [
