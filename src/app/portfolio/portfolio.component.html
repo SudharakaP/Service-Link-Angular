@@ -64,20 +64,49 @@
   </div>
   <div class="container text-center">
     <h2 class="mb-4">Request a Free Demo!</h2>
-    <button type="button" class="btn btn-dark btn-xl sr-button" (click)="open(content)">Request Demo!</button>
+    <button type="button" class="btn btn-dark btn-xl sr-button" (click)="openLg(content)">Request Demo!</button>
   </div>
   <ng-template #content let-c="close" let-d="dismiss">
     <div class="modal-header">
-      <h4 class="modal-title">Request Demo</h4>
+      <h4 class="modal-title">Product Demonstration</h4>
       <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
         <span aria-hidden="true">&times;</span>
       </button>
     </div>
+    <div class="row justify-content-center">
+        <div class="w-25 p-3">
+            <img alt="Product Demo" class="img-fluid rounded" src="../../assets/images/portfolio/product_demo.svg">
+        </div>
+    </div> 
     <div class="modal-body">
-      <p>Firest and Last Name: </p>
+      <div class="form-group row">
+        <label for="name" class="col-2 col-form-label">Full Name</label>
+        <div class="col-10">
+          <input class="form-control" type="text" id="name">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="company" class="col-2 col-form-label">Company</label>
+        <div class="col-10">
+          <input class="form-control" type="text" id="company">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="email" class="col-2 col-form-label">Email</label>
+        <div class="col-10">
+          <input class="form-control" type="email" id="email">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="country" class="col-2 col-form-label">Country</label>
+        <div class="col-10">
+          <input class="form-control" type="select" id="country">
+        </div>
+      </div>
     </div>
     <div class="modal-footer">
-      <button type="button" class="btn btn-outline-dark" (click)="c('Close click')">Close</button>
+      <button type="button" class="btn btn-light" (click)="c('Close click')">Submit</button>
+      <button type="button" class="btn btn-light" (click)="c('Close click')">Close</button>
     </div>
   </ng-template>
 </section>
