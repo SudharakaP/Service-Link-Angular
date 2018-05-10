@@ -5,6 +5,7 @@ import {NgxPageScrollModule} from 'ngx-page-scroll';
 import {NgsRevealModule} from 'ng-scrollreveal';
 import { RouterModule, Routes } from '@angular/router';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { MainHeaderComponent } from './main-header/main-header.component';
@@ -44,7 +45,8 @@ const appRoutes: Routes = [
     MoreInfoContentComponent,
     DeploymentJumbotronComponent,
     DeploymentComponent,
-    DeploymentContentComponent
+    DeploymentContentComponent,
+    HttpClientModule
   ],
 
   imports: [
