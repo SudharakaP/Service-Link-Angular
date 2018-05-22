@@ -86,9 +86,9 @@
         </div>
       </div>
     </div>
-    <div class="modal-body">
-      <form (ngSubmit)="onSubmit()">
-        <div class="form-group row">
+    <form #demoForm="ngForm" (ngSubmit)="sendDemoRequest(demoForm)">
+      <div class="modal-body">
+        <div class="form-group row" name="name" [(ngModel)]="name">
           <label for="name" class="col-2 col-form-label">Full Name</label>
           <div class="col-10">
             <input class="form-control" required type="text" id="name">
@@ -114,11 +114,11 @@
             </select>
           </div>
         </div>
-      </form>
-    </div>
-    <div class="modal-footer">
-      <button type="submit" class="btn btn-success">Submit</button>
-      <button type="button" class="btn" (click)="c('Close click')">Close</button>
-    </div>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-success">Submit</button>
+        <button type="button" class="btn" (click)="c('Close click')">Close</button>
+      </div>
+    </form>
   </ng-template>
 </section>

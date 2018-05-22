@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
+import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
+import { DemoRequestService } from '../angular-services/demo-request.service';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-portfolio',
@@ -8,12 +10,16 @@ import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
 })
 export class PortfolioComponent implements OnInit {
   closeResult: string;
-  constructor(private modalService: NgbModal) { }
+  constructor(private modalService: NgbModal, private demoRequestService: DemoRequestService) { }
 
   ngOnInit() {
   }
 
   openLg(content) {
     this.modalService.open(content, { size: 'lg' });
+  }
+
+  sendDemoRequest(newDemoRequest) {
+    this.demoRequestService.addDemo(newDemoRequest);
   }
 }

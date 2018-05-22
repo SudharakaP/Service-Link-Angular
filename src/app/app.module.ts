@@ -1,11 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import {NgxPageScrollModule} from 'ngx-page-scroll';
-import {NgsRevealModule} from 'ng-scrollreveal';
+import { NgxPageScrollModule } from 'ngx-page-scroll';
+import { NgsRevealModule } from 'ng-scrollreveal';
 import { RouterModule, Routes } from '@angular/router';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { MainHeaderComponent } from './main-header/main-header.component';
@@ -22,6 +23,7 @@ import { MoreInfoContentComponent } from './more-info-content/more-info-content.
 import { DeploymentContentComponent } from './deployment-content/deployment-content.component';
 import { DeploymentJumbotronComponent } from './deployment-jumbotron/deployment-jumbotron.component';
 import { DeploymentComponent } from './deployment/deployment.component';
+import { DemoRequestService } from './angular-services/demo-request.service';
 
 const appRoutes: Routes = [
   { path: '', component: HomePageComponent },
@@ -45,13 +47,15 @@ const appRoutes: Routes = [
     MoreInfoContentComponent,
     DeploymentJumbotronComponent,
     DeploymentComponent,
-    DeploymentContentComponent,
-    HttpClientModule
+    DeploymentContentComponent
   ],
 
   imports: [
     BrowserModule,
     FontAwesomeModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
     NgxPageScrollModule,
     NgsRevealModule.forRoot(),
     NgbModule.forRoot(),
@@ -60,7 +64,7 @@ const appRoutes: Routes = [
       { enableTracing: true } // <-- debugging purposes only
     )
   ],
-  providers: [],
+  providers: [DemoRequestService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
