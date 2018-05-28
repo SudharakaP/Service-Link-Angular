@@ -113,10 +113,13 @@
         <div class="form-group row">
           <label for="email" class="col-2 col-form-label">Email</label>
           <div class="col-10">
-            <input class="form-control" required type="email" [email]="true" id="email" name='email' [(ngModel)]="demoRequest.email" #email="ngModel">
+            <input class="form-control" required type="text" [email]="true" id="email" name='email' [(ngModel)]="demoRequest.email" #email="ngModel" ng-pattern="/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/">
             <div *ngIf="email.invalid && (email.dirty || email.touched)" class="alert alert-danger">
               <div *ngIf="email.errors.required">
                 Email is required.
+              </div>
+              <div *ngIf="!email.errors.required" ng-messages="email.errors.$error">
+                <div ng-message="pattern">Please enter a valid email address!</div>
               </div>
             </div>
           </div>

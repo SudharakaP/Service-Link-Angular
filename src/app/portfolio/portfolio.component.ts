@@ -12,9 +12,12 @@ import { Countries } from '../angular-classes/countries';
 })
 export class PortfolioComponent implements OnInit {
   closeResult: string;
-  demoRequest: DemoRequest = new DemoRequest(); 
+  demoRequest: DemoRequest = new DemoRequest();
+  defaultCountry: string = 'United States';
   countriesList: string[] = Countries.countriesList;
-  constructor(private modalService: NgbModal, private demoRequestService: DemoRequestService) { }
+  constructor(private modalService: NgbModal, private demoRequestService: DemoRequestService) {
+    this.demoRequest.country = this.defaultCountry;
+  }
 
   ngOnInit() {
   }
