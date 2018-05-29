@@ -7,6 +7,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatSnackBarModule } from '@angular/material';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { MainHeaderComponent } from './main-header/main-header.component';
@@ -47,11 +49,13 @@ const appRoutes: Routes = [
     MoreInfoContentComponent,
     DeploymentJumbotronComponent,
     DeploymentComponent,
-    DeploymentContentComponent
+    DeploymentContentComponent,
   ],
 
   imports: [
     BrowserModule,
+    MatSnackBarModule,
+    BrowserAnimationsModule,
     FontAwesomeModule,
     HttpClientModule,
     FormsModule,
@@ -65,6 +69,7 @@ const appRoutes: Routes = [
     )
   ],
   providers: [DemoRequestService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [PortfolioComponent]
 })
 export class AppModule { }

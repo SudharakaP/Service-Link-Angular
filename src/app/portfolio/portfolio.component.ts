@@ -4,6 +4,7 @@ import { DemoRequestService } from '../angular-services/demo-request.service';
 import { HttpClient } from '@angular/common/http';
 import { DemoRequest } from '../angular-classes/demo-request';
 import { Countries } from '../angular-classes/countries';
+import { MatSnackBar } from '@angular/material';
 
 @Component({
   selector: 'app-portfolio',
@@ -16,11 +17,15 @@ export class PortfolioComponent implements OnInit {
   private demoRequest: DemoRequest = new DemoRequest();
   private defaultCountry: string = 'United States';
   private countriesList: string[] = Countries.countriesList;
-  constructor(private modalService: NgbModal, private demoRequestService: DemoRequestService) {
+  constructor(private modalService: NgbModal, public snackBar: MatSnackBar, private demoRequestService: DemoRequestService) {
     this.demoRequest.country = this.defaultCountry;
   }
 
   ngOnInit() {
+  }
+
+  openSnackBar() {
+    this.snackBar.open("Thank you! We will get back to you soon!", '', {duration: 5000});
   }
 
   openLg(content) {
