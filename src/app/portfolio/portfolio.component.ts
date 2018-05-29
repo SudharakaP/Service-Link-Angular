@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModal, NgbModalRef} from '@ng-bootstrap/ng-bootstrap';
 import { DemoRequestService } from '../angular-services/demo-request.service';
 import { HttpClient } from '@angular/common/http';
 import { DemoRequest } from '../angular-classes/demo-request';
@@ -11,10 +11,11 @@ import { Countries } from '../angular-classes/countries';
   styleUrls: ['./portfolio.component.css']
 })
 export class PortfolioComponent implements OnInit {
-  closeResult: string;
-  demoRequest: DemoRequest = new DemoRequest();
-  defaultCountry: string = 'United States';
-  countriesList: string[] = Countries.countriesList;
+  private closeResult: string;
+  private modalRef: NgbModalRef;
+  private demoRequest: DemoRequest = new DemoRequest();
+  private defaultCountry: string = 'United States';
+  private countriesList: string[] = Countries.countriesList;
   constructor(private modalService: NgbModal, private demoRequestService: DemoRequestService) {
     this.demoRequest.country = this.defaultCountry;
   }
@@ -23,10 +24,11 @@ export class PortfolioComponent implements OnInit {
   }
 
   openLg(content) {
-    this.modalService.open(content, { size: 'lg' });
+    this.modalRef = this.modalService.open(content, { size: 'lg' });
   }
 
   sendDemoRequest(newDemoRequest) {
     this.demoRequestService.addDemo(newDemoRequest);
+    this.modalRef.close();
   }
 }

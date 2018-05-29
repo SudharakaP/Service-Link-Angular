@@ -86,7 +86,7 @@
         </div>
       </div>
     </div>
-    <form #demoForm="ngForm" (ngSubmit)="sendDemoRequest(demoForm)">
+    <form #demoForm="ngForm" name= "demoForm" (ngSubmit)="sendDemoRequest(demoForm)">
       <div class="modal-body">
         <div class="form-group row">
           <label for="name" class="col-2 col-form-label">Full Name</label>
@@ -134,9 +134,9 @@
         </div>
       </div>
       <div class="modal-footer">
-        <button type="submit" class="btn btn-success">Submit</button>
+        <button type="submit" class="btn btn-success" [disabled]="!demoForm.valid">Submit</button>
         <button type="button" class="btn" (click)="c('Close click')">Close</button>
       </div>
     </form>
-  </ng-template>
+  </ng-template> 
 </section>
