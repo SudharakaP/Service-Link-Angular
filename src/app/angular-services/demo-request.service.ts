@@ -16,11 +16,13 @@ export class DemoRequestService {
     let email: string = demoRequestObject.email;
     let country: string = demoRequestObject.country;
 
-    return this.http.post('http://localhost:3000/demo', {"name": name, "company": company, "email": email, "country": country}).subscribe(
+    return this.http.post('/demo', {"name": name, "company": company, "email": email, "country": country}).subscribe(
       (data: any) => {
         let response: string = data.status;
         if (response.startsWith("250") || response.startsWith("251") || response.startsWith("252")){
-
+          console.log("Message sent success!")
+        } else {
+          console.log("Response Code: " + response);
         }
       },
       (err: HttpErrorResponse) => {
