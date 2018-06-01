@@ -20,7 +20,7 @@ export class DemoRequestService {
       (data: any) => {
         let response: string = data.status;
         if (response.startsWith("250") || response.startsWith("251") || response.startsWith("252")){
-          console.log("Message sent success!")
+          console.log("Message sent success!");
         } else {
           console.log("Response Code: " + response);
         }

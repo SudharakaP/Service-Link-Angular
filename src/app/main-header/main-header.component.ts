@@ -8,6 +8,7 @@ import { DOCUMENT } from "@angular/platform-browser";
 })
 export class MainHeaderComponent implements OnInit {
   pageScrolled: boolean;
+  public isCollapsed = false;
   constructor() { }
   ngOnInit() {
   }
