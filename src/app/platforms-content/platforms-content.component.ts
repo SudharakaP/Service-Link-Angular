@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-deployment-content',
-  templateUrl: './deployment-content.component.html',
+  selector: 'app-platforms-content',
+  templateUrl: './platforms-content.component.html',
   styleUrls: ['../more-info-content/more-info-content.component.css']
 })
-export class DeploymentContentComponent implements OnInit {
+export class PlatformsContentComponent implements OnInit {
 
   constructor() { }
 

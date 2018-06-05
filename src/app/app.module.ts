@@ -26,11 +26,23 @@ import { DeploymentContentComponent } from './deployment-content/deployment-cont
 import { DeploymentJumbotronComponent } from './deployment-jumbotron/deployment-jumbotron.component';
 import { DeploymentComponent } from './deployment/deployment.component';
 import { DemoRequestService } from './angular-services/demo-request.service';
+import { PlatformsComponent } from './platforms/platforms.component';
+import { PlatformsJumbotronComponent } from './platforms-jumbotron/platforms-jumbotron.component';
+import { PlatformsContentComponent } from './platforms-content/platforms-content.component';
+import { MissionComponent } from './mission/mission.component';
+import { MissionJumbotronComponent } from './mission-jumbotron/mission-jumbotron.component';
+import { MissionContentComponent } from './mission-content/mission-content.component';
+import { WhoAreWeComponent } from './who-are-we/who-are-we.component';
+import { WhoAreWeContentComponent } from './who-are-we-content/who-are-we-content.component';
+import { WhoAreWeJumbotronComponent } from './who-are-we-jumbotron/who-are-we-jumbotron.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomePageComponent },
   { path: 'aboutUs', component: MoreInformationComponent },
-  { path: 'deployment', component: DeploymentComponent }
+  { path: 'deployment', component: DeploymentComponent },
+  { path: 'mission', component: MissionComponent },
+  { path: 'who-are-we', component: WhoAreWeComponent },
+  { path: 'platforms', component: PlatformsComponent }
 ];
 
 @NgModule({
@@ -50,6 +62,15 @@ const appRoutes: Routes = [
     DeploymentJumbotronComponent,
     DeploymentComponent,
     DeploymentContentComponent,
+    PlatformsComponent,
+    PlatformsJumbotronComponent,
+    PlatformsContentComponent,
+    MissionComponent,
+    MissionJumbotronComponent,
+    MissionContentComponent,
+    WhoAreWeComponent,
+    WhoAreWeContentComponent,
+    WhoAreWeJumbotronComponent,
   ],
 
   imports: [
