@@ -1,5 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MainHeaderComponent } from './main-header.component';
 
 describe('MainHeaderComponent', () => {
@@ -8,7 +8,8 @@ describe('MainHeaderComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ MainHeaderComponent ]
+      declarations: [ MainHeaderComponent ], 
+      imports: [ NgbModule.forRoot() ]
     })
     .compileComponents();
   }));

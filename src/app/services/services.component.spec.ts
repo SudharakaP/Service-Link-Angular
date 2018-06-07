@@ -1,5 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { NgsRevealModule } from 'ng-scrollreveal';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ServicesComponent } from './services.component';
 
 describe('ServicesComponent', () => {
@@ -8,7 +9,8 @@ describe('ServicesComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ServicesComponent ]
+      declarations: [ ServicesComponent ],
+      imports: [ NgsRevealModule.forRoot(), FontAwesomeModule ]
     })
     .compileComponents();
   }));

@@ -1,6 +1,9 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { PageHeaderComponent } from '../page-header/page-header.component';
+import { DeploymentJumbotronComponent } from '../deployment-jumbotron/deployment-jumbotron.component';
+import { DeploymentContentComponent } from '../deployment-content/deployment-content.component';
 import { DeploymentComponent } from './deployment.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 describe('DeploymentComponent', () => {
   let component: DeploymentComponent;
@@ -8,7 +11,8 @@ describe('DeploymentComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ DeploymentComponent ]
+      declarations: [ DeploymentComponent, PageHeaderComponent, DeploymentJumbotronComponent, DeploymentContentComponent ],
+      imports: [ NgbModule ]
     })
     .compileComponents();
   }));

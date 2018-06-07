@@ -1,6 +1,10 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PortfolioComponent } from './portfolio.component';
+import { DemoRequestService } from '../angular-services/demo-request.service';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { MatSnackBarModule } from '@angular/material';
+import { HttpClientModule } from '@angular/common/http';
 
 describe('PortfolioComponent', () => {
   let component: PortfolioComponent;
@@ -8,7 +12,9 @@ describe('PortfolioComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PortfolioComponent ]
+      declarations: [ PortfolioComponent ],
+      imports: [ NgbModule.forRoot(), FormsModule, ReactiveFormsModule, MatSnackBarModule, HttpClientModule ],
+      providers: [ DemoRequestService ]
     })
     .compileComponents();
   }));
