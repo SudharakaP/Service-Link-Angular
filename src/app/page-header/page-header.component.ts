@@ -7,6 +7,7 @@ import { Component, OnInit , HostListener} from '@angular/core';
 })
 export class PageHeaderComponent implements OnInit {
   pageScrolled: boolean;
+  public isCollapsed = false;
   constructor() { }
   ngOnInit() {
   }
