@@ -9,8 +9,8 @@ install:
  - npm install
 script:
  - npm run test
-deploy:
+after_success:
  - npm run build
- - bash ./deploy.sh
+ - bash ./build.sh
 before_install:
  - openssl aes-256-cbc -K $encrypted_d00b57d7e51f_key -iv $encrypted_d00b57d7e51f_iv -in id_rsa.enc -out id_rsa -d
