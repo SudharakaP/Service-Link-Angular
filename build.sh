@@ -29,7 +29,7 @@ git config user.name "Travis CI"
 git config user.email "sudharaka@service-link.us"
 
 # Commit the "changes", i.e. the new version.
-git add -fA .
+git add -f public/*
 git commit -m "TravisCI Auto Deploy: $TRAVIS_COMMIT"
 
 # Get the deploy key by using Travis's stored variables to decrypt deploy_key.enc
