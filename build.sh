@@ -3,7 +3,7 @@ set -e # Exit with nonzero exit code if anything fails
 
 SOURCE_BRANCH="master"
 TARGET_BRANCH="development"
-ENCRYPTION_LABEL="d00b57d7e51f"
+ENCRYPTION_LABEL="76bf75918cf2"
 
 # Pull requests and commits to other branches shouldn't try to deploy, just build to verify
 if [ "$TRAVIS_PULL_REQUEST" != "false" -o "$TRAVIS_BRANCH" != "$SOURCE_BRANCH" ]; then
