@@ -29,7 +29,6 @@ git config user.name "Travis CI"
 git config user.email "sudharaka@service-link.us"
 
 # Commit the "changes", i.e. the new version.
-# The delta will show diffs between new and old versions.
 git add -fA .
 git commit -m "TravisCI Auto Deploy: $TRAVIS_COMMIT"
 
