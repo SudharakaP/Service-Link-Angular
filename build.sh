@@ -13,7 +13,7 @@ if [ "$TRAVIS_PULL_REQUEST" != "false" -o "$TRAVIS_BRANCH" != "$SOURCE_BRANCH" ]
 fi
 
 # Save some useful information
-REPO=`https://github.com/SudharakaP/ServiceLinkNode.git`
+REPO="https://github.com/SudharakaP/ServiceLinkNode.git"
 SSH_REPO=${REPO/https:\/\/github.com\//git@github.com:}
 
 # Clone the existing ServiceLinkNode server backend
