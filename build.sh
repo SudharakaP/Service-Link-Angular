@@ -47,4 +47,4 @@ ssh -o StrictHostKeyChecking=no github.com
 ssh-add ../Service-Link-Angular/deploy_key
 
 # Now that we're all set up, we can push.
-git push $SSH_REPO $TARGET_BRANCH >/dev/null 2>&1
+git push $REPO $TARGET_BRANCH >/dev/null 2>&1
