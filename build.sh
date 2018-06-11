@@ -43,6 +43,7 @@ openssl aes-256-cbc -K $ENCRYPTED_KEY -iv $ENCRYPTED_IV -in deploy_key.enc -out 
 chmod 600 deploy_key
 cd ../ServiceLinkNode
 eval `ssh-agent -s`
+ssh -o StrictHostKeyChecking=no github.com
 ssh-add ../Service-Link-Angular/deploy_key
 
 # Now that we're all set up, we can push.
