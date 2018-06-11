@@ -42,7 +42,8 @@ const appRoutes: Routes = [
   { path: 'deployment', component: DeploymentComponent },
   { path: 'mission', component: MissionComponent },
   { path: 'who-are-we', component: WhoAreWeComponent },
-  { path: 'platforms', component: PlatformsComponent }
+  { path: 'platforms', component: PlatformsComponent },
+  { path: '**', component: HomePageComponent }
 ];
 
 @NgModule({
@@ -70,7 +71,7 @@ const appRoutes: Routes = [
     MissionContentComponent,
     WhoAreWeComponent,
     WhoAreWeContentComponent,
-    WhoAreWeJumbotronComponent,
+    WhoAreWeJumbotronComponent
   ],
 
   imports: [
