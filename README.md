@@ -1,4 +1,4 @@
-# ServiceLinkAngular [![Build Status](https://travis-ci.org/SudharakaP/Service-Link-Angular.svg?branch=master)](https://travis-ci.org/SudharakaP/Service-Link-Angular) [![Known Vulnerabilities](https://snyk.io/test/github/SudharakaP/Service-Link-Angular/badge.svg?targetFile=package.json)](https://snyk.io/test/github/SudharakaP/Service-Link-Angular?targetFile=package.json) [![Greenkeeper badge](https://badges.greenkeeper.io/Service-Link/Service-Link-Angular.svg)](https://greenkeeper.io/)
+# ServiceLinkAngular [![Build Status](https://travis-ci.org/Service-Link/Service-Link-Angular.svg?branch=master)](https://travis-ci.org/Service-Link/Service-Link-Angular) [![Known Vulnerabilities](https://snyk.io/test/github/SudharakaP/Service-Link-Angular/badge.svg?targetFile=package.json)](https://snyk.io/test/github/SudharakaP/Service-Link-Angular?targetFile=package.json) [![Greenkeeper badge](https://badges.greenkeeper.io/Service-Link/Service-Link-Angular.svg)](https://greenkeeper.io/)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.4.
 
