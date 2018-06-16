@@ -1,5 +1,5 @@
 os:
- - linux # build_3
+ - osx
 addons:
   chrome: stable
 language: node_js
