@@ -5,6 +5,9 @@ addons:
 language: node_js
 node_js:
  - 8.9.0
+notifications:
+  email:
+    - support@service-link.us
 cache:
   directories:
     - node_modules
