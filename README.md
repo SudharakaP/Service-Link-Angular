@@ -1,6 +1,6 @@
 # ServiceLinkAngular [![Build Status](https://travis-ci.org/Service-Link/Service-Link-Angular.svg?branch=master)](https://travis-ci.org/Service-Link/Service-Link-Angular) [![Known Vulnerabilities](https://snyk.io/test/github/SudharakaP/Service-Link-Angular/badge.svg?targetFile=package.json)](https://snyk.io/test/github/SudharakaP/Service-Link-Angular?targetFile=package.json) [![Greenkeeper badge](https://badges.greenkeeper.io/Service-Link/Service-Link-Angular.svg)](https://greenkeeper.io/)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.4.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
 
 ## Development server
 
@@ -25,3 +25,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Travis CI
+
+Any commit will trigger a Travis build and run the unit tests. End to end tests are currently not configured with Travis. Relavant Travis build page for this project can be found at, https://travis-ci.org/Service-Link/Service-Link-Angular
