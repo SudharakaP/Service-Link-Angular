@@ -1,27 +1,27 @@
 os:
- - osx
+- osx
 addons:
   chrome: stable
 language: node_js
 node_js:
- - 8.9.0
+- 8.9.0
 notifications:
   email:
-    - support@service-link.us
+  - support@service-link.us
 cache:
   directories:
-    - node_modules
+  - node_modules
 before_install:
-  - '[[ $(node -v) =~ ^v9.*$ ]] || npm install -g npm@latest' # skipped when using node 9
-  - npm install -g greenkeeper-lockfile
+- "[[ $(node -v) =~ ^v9.*$ ]] || npm install -g npm@latest"
+- npm install -g greenkeeper-lockfile
 install:
-  - npm install
+- npm install
 before_script:
-  - greenkeeper-lockfile-update
+- greenkeeper-lockfile-update
 script:
-  - npm run test
+- npm run test
 after_script:
-  - greenkeeper-lockfile-upload
+- greenkeeper-lockfile-upload
 env:
   global:
-    secure: tIvCTNXs91c13KozwZlWvgs0xctnV21W9ZIPhrjjX/YRgWFxZPmvqseMItAQkHT+zpU6meap6ixYnWLlwm5g0MkwQLL4HCe1ENUDQQPkmcK5UzFcLuoTSWdvSxme1fkYYBmhAt40LwpGG6VRdzrKeYZylY1/wdHRSOqiY6uP2Rnd8D4sVTgIcjL54Tzof19FJqrD23cICDYmsqaClm5/qd3/PzH5qAqwq+3MXgyRqQxaYiW16aGA02ourdsLO0USDyA5cIGkQkGw/ztV6DMrqm2/+l3nSwWCAuXYxONCWVRUDB1o+3bVtbp4uYQZxxiOGNbHuuCvLt1KEXf8SXE0nt2jW9aACzZrvnF0sZ9qV4Yf/0cOmm5YcGdjFnwFjq8B0ZSMnNHpnetmWb2WOlJKk67lUK5g6q+EiJLwIXAXriVgABuSR/nki+M6gMomr5dTI1mo0bDwN0CUv5voMHvALZ51Y0+Z//En3HiYTiq560H8hL2a/pUr6EHemgkwZ9jPyjBgfh9t8b8cuR/Qvvc/I4xPiuKqTFboJSsNvKIYC3TvfB+Y9Lf0ia3zTi9wM56WelaB+y5isccmSNbh/m06Q5b4jaDTONDaXzSKfACVNZZpm3lqmAtYYOBJ/iw6eEDonIhM+nMPtiXlsMfbBR4yEoiG4AbEXxGxAGmwkoYv748=
+    secure: nRpjJ452JP3Ou8j/dzV1eotyc0ch1RPmZkBAKe221ZppUo9wuM2bStXnxJL9kUr9CFiPqIJVPjO/zIGBg1e49mezbKQCh422vGDeMHbDD3Oovlt5Xb4e55BFdzI+Xs5SUQIlM2+0kZ1ed8+VEZXxsh+b1GO6oq0zcyuQYQAH56n2RZcxGfCUUXDv2aDC/oCZJGy/yyYGAjSCqvVlSRl/JLqCAy7WWsYsfZdR+Fe8JBAQkMoWPzbNGttOTJAbk5O1G2e1pug53ImcS+1xTSWwz79JlO3gCGw/VRH2BZtrKJ/ZzD0V3rW3bNIDREahRBIBfzn91Pmyf31M8+Nz8q8FtMbCuXHpURwrxHRxFMTT01wXK684rY5NC4DgsBsqWQtexmqHV6qtEq9Kc3FniNBrPgyF2ti8OncKdkUEbSWgFu7SQ8UBkUjB4K9hbNGdo6QcmrMhKsjGKIv8K0rVRE1uPKeOLMPv8gV8K7Tve8c9KCalLE1b9UcgjvybbDXvnX7T5dx9RBgwcpagmLJUKLJjJXKqazayfpdiOFUB4HMhLQA9+p0iyhjehW+3Lw994uGYOvpP7A2jufpqqLD6CBCBulSKPOhCBX1fljwz1yiynaAcSjlXCefJl77zePx+R2WP42W1I+p4bMHUItxmFkCP1z12Zq5jMxflynFZxW2qwxo=
