@@ -1,17 +1,27 @@
 os:
- - osx
+  - osx
 addons:
   chrome: stable
 language: node_js
 node_js:
- - 8.9.0
+  - 8.9.0
 notifications:
   email:
-    - support@service-link.us
+  - support@service-link.us
 cache:
   directories:
-    - node_modules
+  - node_modules
+before_install:
+  - '[[ $(node -v) =~ ^v9.*$ ]] || npm install -g npm@latest' # skipped when using node 9
+  - npm install -g greenkeeper-lockfile
 install:
- - npm install
+  - npm install
+before_script:
+  - greenkeeper-lockfile-update
 script:
- - npm run test
+  - npm run test
+after_script:
+  - greenkeeper-lockfile-upload
+env:
+  global:
+    secure: tIvCTNXs91c13KozwZlWvgs0xctnV21W9ZIPhrjjX/YRgWFxZPmvqseMItAQkHT+zpU6meap6ixYnWLlwm5g0MkwQLL4HCe1ENUDQQPkmcK5UzFcLuoTSWdvSxme1fkYYBmhAt40LwpGG6VRdzrKeYZylY1/wdHRSOqiY6uP2Rnd8D4sVTgIcjL54Tzof19FJqrD23cICDYmsqaClm5/qd3/PzH5qAqwq+3MXgyRqQxaYiW16aGA02ourdsLO0USDyA5cIGkQkGw/ztV6DMrqm2/+l3nSwWCAuXYxONCWVRUDB1o+3bVtbp4uYQZxxiOGNbHuuCvLt1KEXf8SXE0nt2jW9aACzZrvnF0sZ9qV4Yf/0cOmm5YcGdjFnwFjq8B0ZSMnNHpnetmWb2WOlJKk67lUK5g6q+EiJLwIXAXriVgABuSR/nki+M6gMomr5dTI1mo0bDwN0CUv5voMHvALZ51Y0+Z//En3HiYTiq560H8hL2a/pUr6EHemgkwZ9jPyjBgfh9t8b8cuR/Qvvc/I4xPiuKqTFboJSsNvKIYC3TvfB+Y9Lf0ia3zTi9wM56WelaB+y5isccmSNbh/m06Q5b4jaDTONDaXzSKfACVNZZpm3lqmAtYYOBJ/iw6eEDonIhM+nMPtiXlsMfbBR4yEoiG4AbEXxGxAGmwkoYv748=
