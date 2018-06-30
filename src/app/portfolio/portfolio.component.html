@@ -73,20 +73,25 @@
         <span aria-hidden="true">&times;</span>
       </button>
     </div>
-    <div class="d-none d-lg-block">
+    <div class="modal-body">
       <div class="row">
-        <div class="w-25 p-3 col-4">
+        <div class="d-none d-lg-block col-3">
           <img alt="Product Demo" class="img-fluid rounded" src="../../assets/images/portfolio/product_demo.svg">
         </div>
-        <div class="w-25 p-3 col-4">
+        <div class="col-lg-9">
+          Interested in working with Service-Link? We can show you our product in much greater detail in a demo. This will also provide
+          you with information on how our solutions can solve problems specific to your context, and how Service-Link can
+          provide a customised and fine-tuned product specifically for you!
+        </div>
+        <!-- <div class="w-25 p-3 col-4">
           <img alt="Product Demo" class="img-fluid rounded" src="../../assets/images/portfolio/data_report.svg">
         </div>
         <div class="w-25 p-3 col-4">
           <img alt="Product Demo" class="img-fluid rounded" src="../../assets/images/portfolio/demo_finance.svg">
-        </div>
+        </div> -->
       </div>
     </div>
-    <form #demoForm="ngForm" name= "demoForm" (ngSubmit)="sendDemoRequest(demoForm)">
+    <form #demoForm="ngForm" name="demoForm" (ngSubmit)="sendDemoRequest(demoForm)">
       <div class="modal-body">
         <div class="form-group row">
           <label for="name" class="col-2 col-form-label">Full Name</label>
@@ -95,8 +100,8 @@
             <div *ngIf="name.invalid && (name.dirty || name.touched)" class="alert alert-danger">
               <div *ngIf="name.errors.required">
                 Name is required.
-          </div>
-        </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="form-group row">
@@ -113,7 +118,8 @@
         <div class="form-group row">
           <label for="email" class="col-2 col-form-label">Email</label>
           <div class="col-10">
-            <input class="form-control" required type="text" [email]="true" id="email" name='email' [(ngModel)]="demoRequest.email" #email="ngModel" ng-pattern="/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/">
+            <input class="form-control" required type="text" [email]="true" id="email" name='email' [(ngModel)]="demoRequest.email" #email="ngModel"
+              ng-pattern="/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/">
             <div *ngIf="email.invalid && (email.dirty || email.touched)" class="alert alert-danger">
               <div *ngIf="email.errors.required">
                 Email is required.
@@ -138,5 +144,5 @@
         <button type="button" class="btn" (click)="c('Close click')">Close</button>
       </div>
     </form>
-  </ng-template> 
+  </ng-template>
 </section>
