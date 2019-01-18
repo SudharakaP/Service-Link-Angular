@@ -35,6 +35,7 @@ import { MissionContentComponent } from './mission-content/mission-content.compo
 import { WhoAreWeComponent } from './who-are-we/who-are-we.component';
 import { WhoAreWeContentComponent } from './who-are-we-content/who-are-we-content.component';
 import { WhoAreWeJumbotronComponent } from './who-are-we-jumbotron/who-are-we-jumbotron.component';
+import { FooterComponent } from './footer/footer.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomePageComponent },
@@ -71,7 +72,8 @@ const appRoutes: Routes = [
     MissionContentComponent,
     WhoAreWeComponent,
     WhoAreWeContentComponent,
-    WhoAreWeJumbotronComponent
+    WhoAreWeJumbotronComponent,
+    FooterComponent
   ],
 
   imports: [
