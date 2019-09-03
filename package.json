@@ -39,7 +39,7 @@
     "ngx-page-scroll": "^6.0.0",
     "puppeteer": "^1.5.0",
     "rxjs": "^6.2.1",
-    "rxjs-compat": "^6.2.1",
+    "rxjs-compat": "6.5.2",
     "scrollreveal": "^3.4.0",
     "zone.js": "^0.8.21"
   },
