@@ -37,7 +37,7 @@
     "intl": "^1.2.5",
     "ng-scrollreveal": "^2.2.0",
     "ngx-page-scroll": "^6.0.0",
-    "puppeteer": "^1.5.0",
+    "puppeteer": "^3.0.4",
     "rxjs": "^6.2.1",
     "rxjs-compat": "^6.2.1",
     "scrollreveal": "^3.4.0",
